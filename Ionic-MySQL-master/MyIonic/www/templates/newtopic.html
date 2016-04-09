@@ -1,0 +1,39 @@
+<ion-view view-title="Nova Tarefa">
+<ion-content>
+	
+ <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Título</span>
+    <input type="text" ng-model="topic.nome_tarefa" placeholder="Insira o título">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Mensagem</span>
+    <textarea rows="3" required
+          placeholder="Insira sua Mensagem" ng-model="topic.descricao"></textarea>
+  </label>
+<!--
+    <label class="item item-input item-stacked-label">
+    <span class="input-label">Seu nome</span>
+    <input type="text" ng-model="topic.id_user">
+  </label>
+
+  <div class="item">
+    <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+    <img ng-show="imgURI === undefined" ng-src="http://placehold.it/180x180">
+    <p>
+    <button class="button icon ion-camera" ng-click="takePicture(1)"></button>
+    <button class="button icon ion-images" ng-click="takePicture(2)"></button>  
+    </p>
+  </div>
+  -->
+</div>
+
+<div class="">
+        <button class="button button-assertive button-full" ng-click="post(topic)">
+          Postar <i class="icon ion-paper-airplane"></i>
+        </button>
+    </div>
+
+
+</ion-content>
+</ion-view>
